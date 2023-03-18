@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styleCalculatrice.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="yellow"></div>
+    <div class="container">
+        <form >
+        <div class="calculatrice">
+        <div>
+            <input type="text" name="affichage" >
+        </div> 
+    <div>
+        <input type="button" value="AC" onclick="affichage.value =  affichage.value.toString().slice(0,-1)">
+        <input type="button" value="/" onclick="affichage.value += '/' ">
+        <input type="button" value="*" onclick="affichage.value += '*' ">
+        <input type="button"value="DEL" onclick="affichage.value = '' ">
+        </div>
+    <div> 
+        <input type="button" value="7" onclick="affichage.value += '7' ">
+        <input type="button" value="8" onclick="affichage.value += '8' ">
+        <input type="button" value="9" onclick="affichage.value += '9'">
+        <input type="button"value="-" onclick="affichage.value += '-'">
+    </div>
+    <div> 
+        <input type="button" value="4" onclick="affichage.value += '4' ">
+        <input type="button" value="5" onclick="affichage.value += '5' ">
+        <input type="button" value="6" onclick="affichage.value += '6' ">
+        <input type="button"value="+" onclick="affichage.value += '+' ">
+    </div>
+    <div> 
+        <input type="button" value="1" onclick="affichage.value += '1' ">
+        <input type="button" value="2" onclick="affichage.value += '2' ">
+        <input type="button" value="3" onclick="affichage.value += '3' ">
+        <input type="button" id="equal" value="=" onclick="affichage.value = eval(affichage.value) ">
+    </div>
+    <div> 
+        <input type="button" value="00" onclick="affichage.value += '00' ">
+        <input type="button" value="0" onclick="affichage.value += '0' ">
+        <input type="button" value="." onclick="affichage.value += '.' ">
+    </div>
+</form>
+    </div>
+</body>
+</html>
